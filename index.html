@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f6f7">
+  <title>快爆 · 设计稿演示</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f5f6f7; color: #131715; font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; }
+    main { max-width: 540px; margin: auto; padding: calc(32px + env(safe-area-inset-top)) 20px 40px; }
+    h1 { margin: 0 0 8px; font-size: 24px; }
+    p { margin: 0; color: #7a7d7a; font-size: 14px; line-height: 1.6; }
+    nav { display: grid; gap: 12px; margin-top: 28px; }
+    a { display: flex; align-items: center; gap: 14px; padding: 20px; background: white; border-radius: 18px; color: inherit; text-decoration: none; }
+    a:focus-visible { outline: 2px solid #43b919; outline-offset: 3px; }
+    img { width: 56px; height: 56px; border-radius: 14px; object-fit: cover; flex: none; }
+    strong { display: block; font-size: 17px; margin-bottom: 5px; }
+    span { font-size: 12px; color: #7a7d7a; }
+    .arrow { margin-left: auto; font-size: 22px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>设计稿演示</h1>
+    <p>好游快爆 · 移动端页面与交互预览</p>
+    <nav aria-label="演示页面">
+      <a href="./游戏详情页/">
+        <img src="./游戏详情页/assets/4a8da.png" alt="">
+        <div><strong>游戏详情页</strong><span>三角洲行动 · 详情与交互</span></div>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+      <a href="./测试资格招募/">
+        <img src="./测试资格招募/assets/47a33.png" alt="">
+        <div><strong>测试资格招募</strong><span>测试资格卡 · 名单查询与公示</span></div>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+    </nav>
+  </main>
+</body>
+</html>

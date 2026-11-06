@@ -1,0 +1,14 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="gamedet_icon_star2" clip-path="url(#clip0_0_220)">
+<path id="Vector 2681" d="M5.49996 11C4.8714 8.42027 3.82379 6.12224 0.261905 5.26233C3.68326 4.42651 5.23611 1.50924 5.49996 0.102787C5.53635 -0.0911338 5.52837 0.0265989 5.51651 0.151254C6.78622 3.85905 7.81739 4.40693 10.7381 5.47717C6.12853 6.76704 6.33805 8.42027 5.49996 11Z" fill="url(#paint0_linear_0_220)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_220" x1="5.5" y1="0" x2="5.5" y2="11" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF9500"/>
+<stop offset="1" stop-color="#F4D210"/>
+</linearGradient>
+<clipPath id="clip0_0_220">
+<rect width="11" height="11" fill="white"/>
+</clipPath>
+</defs>
+</svg>

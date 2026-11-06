@@ -1,0 +1,21 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="8.75" height="16.25" viewBox="0 0 8.75 16.25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="icon_exclamationmark" clip-path="url(#clip0_0_108)">
+<g id="Subtract">
+<use xlink:href="#stroke0_0_108" fill="#131715"/>
+<use xlink:href="#stroke1_0_108" fill="#131715"/>
+<mask id="stroke2_0_108" maskUnits="userSpaceOnUse" x="-0.125" y="-0.75" width="9" height="18" fill="black">
+<rect fill="white" x="-0.125" y="-0.75" width="9" height="18"/>
+<use xlink:href="#stroke0_0_108"/>
+<use xlink:href="#stroke1_0_108"/>
+</mask>
+<path d="M4.20084 1.26175L6.24066 1.62318C6.67026 1.6993 6.94794 2.12253 6.84828 2.54929L4.85199 11.0977L2.28102 10.6421L3.31465 1.92318C3.36625 1.4879 3.77124 1.18563 4.20084 1.26175ZM4.53021 12.4756L2.11442 12.0475L1.8804 14.0215C1.83272 14.4237 2.10588 14.7932 2.50277 14.8635L3.20681 14.9883C3.60371 15.0586 3.98617 14.8052 4.07824 14.411L4.53021 12.4756Z" stroke-width="2.5" stroke="#CCFC19" mask="url(#stroke2_0_108)"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_108">
+<rect width="8.75" height="16.25" fill="white"/>
+</clipPath>
+<path id="stroke0_0_108" d="M6.24066 1.62318L4.20084 1.26175C3.77124 1.18563 3.36625 1.4879 3.31465 1.92318L2.28102 10.6421L4.85199 11.0977L6.84828 2.54929C6.94794 2.12253 6.67026 1.6993 6.24066 1.62318Z"/>
+<path id="stroke1_0_108" d="M4.53021 12.4756L2.11442 12.0475L1.8804 14.0215C1.83272 14.4237 2.10588 14.7932 2.50277 14.8635L3.20681 14.9883C3.60371 15.0586 3.98617 14.8052 4.07824 14.411L4.53021 12.4756Z"/>
+</defs>
+</svg>

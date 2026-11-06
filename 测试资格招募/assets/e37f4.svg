@@ -1,0 +1,21 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="vid_icon_top_play" clip-path="url(#clip0_0_139)">
+<g id="Polygon 2" filter="url(#filter0_d_0_139)">
+<path d="M18.8026 39.208L38.3026 27.9497C41.3026 26.2176 41.3026 21.8875 38.3026 20.1554L18.8026 8.89711C15.8026 7.16506 12.0526 9.33013 12.0526 12.7942L12.0526 35.3109C12.0526 38.775 15.8026 40.9401 18.8026 39.208Z" stroke-width="4.5" stroke="white"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_0_139" x="5.80256" y="2.03416" width="41" height="44.0368" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_139"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_139" result="shape"/>
+</filter>
+<clipPath id="clip0_0_139">
+<rect width="48" height="48" fill="white"/>
+</clipPath>
+</defs>
+</svg>
