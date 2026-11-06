@@ -197,7 +197,9 @@ main { display: grid; gap: 8px; padding: 0 8px calc(76px + env(safe-area-inset-b
 .review-tags span { padding: 3px 6px; border-radius: 5px; background: #edf7d8; color: #4e9c37; font-size: 10px; }
 .review { border-bottom: 1px solid #f0f0f0; padding: 9px 0; display: grid; grid-template-columns: 16px 1fr; gap: 5px; font-size: 12px; line-height: 19px; }
 .review:last-child { border: 0; padding-bottom: 0; }
-.reviews { min-height: 368px; }
+.reviews { padding-bottom: 16px; }
+.section-link { display: inline-flex; align-items: center; gap: 4px; }
+.section-arrow { flex: none; width: 8px; height: 8px; }
 .review img.avatar { width: 15px; height: 15px; object-fit: cover; border-radius: 50%; margin-top: 3px; }
 .review small { display: block; color: #949794; }
 .review .stars { color: #78a936; margin-right: 5px; letter-spacing: 1px; }
@@ -206,16 +208,20 @@ main { display: grid; gap: 8px; padding: 0 8px calc(76px + env(safe-area-inset-b
 .facts dl { display: grid; gap: 8px; margin-top: 12px; font-size: 12px; color: #8b8d8b; }
 .facts dl div { display: flex; gap: 10px; justify-content: space-between; }
 .facts dd { text-align: right; }
-.action-bar { position: fixed; z-index: 2; inset: auto 0 0; margin: auto; width: 100%; max-width: var(--width); min-height: 64px; padding: 8px 16px calc(12px + env(safe-area-inset-bottom)); background: white; border-top: 1px solid #eee; display: flex; align-items: center; gap: 14px; }
-.footer-more, .footer-event { flex: none; width: 26px; font-size: 8px; }
-.footer-more img { display: block; width: 21px; margin: 0 auto 2px; }
-.footer-event { position: relative; width: 36px; height: 38px; overflow: hidden; border-radius: 10px; color: white; isolation: isolate; background: transparent; }
-.footer-event img { position: absolute; top: 0; left: 2px; width: 32px; height: 32px; object-fit: cover; border-radius: 8px; }
-.footer-event span { position: absolute; top: 25px; left: 0; width: 36px; height: 11px; line-height: 11px; font-size: 8px; border-radius: 4px; background: #ff7c18; color: white; }
-.cloud-buttons { min-width: 0; flex: 1; display: flex; height: 40px; border-radius: 13px; overflow: hidden; }
-.cloud-buttons button { flex: 1; background: #131715; color: white; font-weight: 700; font-size: 14px; white-space: nowrap; }
-.cloud-buttons button:last-child { background: linear-gradient(110deg, #ff8711, #ffca00); flex: 1.4; }
-.cloud-buttons img { width: 17px; margin-right: 4px; }
+.action-bar { position: fixed; z-index: 2; inset: auto 0 0; margin: auto; width: 100%; max-width: var(--width); min-height: 64px; padding: 8px 16px calc(16px + env(safe-area-inset-bottom)) 8px; background: white; display: flex; align-items: center; gap: 8px; }
+.footer-shortcuts { display: flex; flex: none; }
+.footer-more, .footer-event { flex: none; width: 44px; height: 40px; }
+.footer-more { display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding-block: 2px; font-size: 9px; line-height: 11px; color: #3e403f; }
+.footer-more img { width: 18.531px; height: 18.623px; }
+.footer-event { position: relative; color: white; isolation: isolate; }
+.footer-event img { position: absolute; top: 1px; left: 6px; width: 32px; height: 32px; object-fit: cover; border-radius: 8px; }
+.footer-event span { position: absolute; bottom: 2px; left: 3px; width: 38px; height: 12px; line-height: 12px; font-size: 8px; border-radius: 8px; background: #fc7a0d; color: white; }
+.cloud-buttons { min-width: 0; flex: 1; display: flex; height: 40px; border-radius: 12px; overflow: hidden; }
+.cloud-buttons button { display: flex; align-items: center; justify-content: center; gap: 3px; min-width: 0; background: #131715; color: white; white-space: nowrap; }
+.cloud-buttons button:first-child { flex: 0 0 100px; font-weight: 500; font-size: 14px; line-height: 17px; }
+.cloud-buttons button:first-child span { opacity: .9; }
+.cloud-buttons button:last-child { flex: 1; font-weight: 400; font-size: 15px; line-height: 18px; background: url('assets/d9b85.svg') left center / 60px 40px no-repeat, url('assets/788fd.svg') right bottom / 80px 40px no-repeat, linear-gradient(to bottom, #fd8511 3.333%, #fdc702); }
+.cloud-buttons img { width: 16px; height: 16px; }
 dialog { border: 0; padding: 0; color: var(--ink); }
 dialog::backdrop { background: #13171599; }
 body:has(dialog[open]) { overflow: hidden; }
@@ -236,7 +242,6 @@ body:has(dialog[open]) { overflow: hidden; }
   .game-main { gap: 8px; }
   .game-name h1 { font-size: 15px; }
   .nav-links button { padding-inline: 7px; }
-  .action-bar { gap: 10px; padding-inline: 12px; }
 }
 
 .event-timeline { position: absolute; width: 6px; height: 26.5px; top: 12px; left: 12px; }
