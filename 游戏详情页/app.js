@@ -1,7 +1,7 @@
 const select = selector => document.querySelector(selector);
 const mediaButtons = [...document.querySelectorAll('[data-media]')];
-const pictures = ['assets/3862e.png', 'assets/5924c.png'];
-const posters = ['assets/abdd9.png', ...pictures];
+const pictures = ['assets/3862e.webp', 'assets/5924c.webp'];
+const posters = ['assets/hero-poster.webp', ...pictures];
 const poster = select('#poster');
 const sheet = select('#sheet');
 const lightbox = select('#lightbox');
@@ -31,6 +31,48 @@ const panels = {
 let mediaIndex = 0;
 let imageIndex = 0;
 let toastTimer;
+const heroMotion = select('#hero-motion');
+const headerMotion = select('#header-motion');
+const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
+let heroInView = true;
+let heroAssetsReady = false;
+
+function updateHeroMotion() {
+  const active = heroAssetsReady && heroInView && mediaIndex === 0 &&
+    !document.hidden && !motionPreference.matches;
+  for (const video of [heroMotion, headerMotion]) {
+    if (active) {
+      if (!video.getAttribute('src')) video.src = 'assets/hero.mp4';
+      video.hidden = false;
+      video.play().catch(() => {
+        // Keep the already-visible poster when the browser blocks autoplay.
+        video.hidden = true;
+      });
+    } else {
+      video.pause();
+      video.hidden = true;
+    }
+  }
+}
+
+for (const video of [heroMotion, headerMotion]) {
+  video.addEventListener('playing', () => video.classList.add('ready'));
+  video.addEventListener('error', () => { video.hidden = true; });
+}
+window.addEventListener('load', () => {
+  // Display the lightweight poster before downloading animation frames.
+  requestAnimationFrame(() => {
+    heroAssetsReady = true;
+    updateHeroMotion();
+  });
+});
+new IntersectionObserver(entries => {
+  heroInView = entries[0].isIntersecting;
+  updateHeroMotion();
+}).observe(select('.poster'));
+document.addEventListener('visibilitychange', updateHeroMotion);
+motionPreference.addEventListener('change', updateHeroMotion);
+
 
 // Expand once when the collapsed card's centre reaches the viewport midline.
 const editorialDetails = select('.editorial details');
@@ -136,6 +178,7 @@ function setMedia(index) {
   poster.src = posters[mediaIndex];
   select('#header-backdrop-image').src = posters[mediaIndex];
   poster.classList.toggle('intro', mediaIndex === 0);
+  updateHeroMotion();
   poster.alt = mediaButtons[mediaIndex].textContent + '封面';
   mediaButtons.forEach((button, i) => button.setAttribute('aria-pressed', String(i === mediaIndex)));
 }
@@ -203,7 +246,7 @@ function openReview() {
       input.reportValidity();
       return;
     }
-    addReview('我的评价', '4a8da.png', message, '★★★★★');
+    addReview('我的评价', '4a8da.webp', message, '★★★★★');
     sheet.close();
     jump('reviews');
     notify('已添加本地演示评价');

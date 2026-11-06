@@ -141,7 +141,7 @@ main { display: grid; gap: 8px; padding: 0 8px calc(76px + env(safe-area-inset-b
 .benefit small { display: inline-block; margin-top: 6px; border: 1px solid #426129; border-radius: 12px; padding: 1px 8px; font-size: 10px; background: #ddf58e; }
 .medal { position: absolute; right: 20px; width: 56px; height: 56px; object-fit: contain; }
 .benefit-indicator { position: absolute; left: 50%; bottom: 4px; width: 36px; height: 4px; transform: translateX(-50%); border-radius: 5px; background: linear-gradient(90deg, white 50%, #0004 50%); }
-.season { position: relative; color: white; background: linear-gradient(#83473bee, #754035f7), url(assets/948f6.png) center / cover; padding: 34px 16px 12px; min-height: 245px; }
+.season { position: relative; color: white; background: linear-gradient(#83473bee, #754035f7), url(assets/948f6.webp) center / cover; padding: 34px 16px 12px; min-height: 245px; }
 .season-badge { position: absolute; top: -8px; left: 0; transform: rotate(-8deg); padding: 1px 5px; border-radius: 10px; background: #ccfc19; font-size: 12px; font-weight: 800; color: var(--ink); }
 .season-badge img { height: 16px; vertical-align: top; }
 .season-intro { display: flex; gap: 8px; align-items: flex-start; justify-content: space-between; }
@@ -261,3 +261,9 @@ body:has(dialog[open]) { overflow: hidden; }
 #follow small { display: flex; align-items: center; gap: 2px; }
 .follow-icon { width: 11px; height: 11px; }
 #follow[aria-pressed=true] .follow-icon { display: none; }
+
+/* Poster-first animation: videos share the original image geometry. */
+.hero-motion { position: absolute; width: 130.55%; height: 130.49%; left: -11.49%; top: -20.63%; object-fit: fill; pointer-events: none; opacity: 0; }
+.hero-motion.ready { opacity: 1; }
+.header-motion { position: absolute; width: 204.3%; height: 113.11%; left: -52.15%; top: -12.57%; object-fit: fill; pointer-events: none; opacity: 0; }
+.header-motion.ready { opacity: .06; }

@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#333365">
   <title>三角洲行动 · 游戏详情演示</title>
-  <link rel="icon" href="assets/4a8da.png">
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
+  <link rel="icon" href="assets/4a8da.webp">
+  <link rel="preload" as="image" href="assets/hero-poster.webp" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css?v=assets-2">
+  <script src="app.js?v=assets-2" defer></script>
 </head>
 <body>
   <div class="page">
-    <header class="header" id="top"><div class="header-backdrop" aria-hidden="true"><img id="header-backdrop-image" src="assets/abdd9.png" alt=""></div>
+    <header class="header" id="top"><div class="header-backdrop" aria-hidden="true"><img id="header-backdrop-image" src="assets/hero-poster.webp" alt=""><video class="header-motion" id="header-motion" muted loop playsinline preload="none" aria-hidden="true"></video></div>
       <div class="status" aria-hidden="true"><img src="assets/c1e9b.svg" alt=""><img src="assets/f3ce9.svg" alt=""><img src="assets/c7dfb.svg" alt="">12:30</div>
       <nav class="navigation" aria-label="游戏导航">
         <button class="nav-icon" aria-label="返回顶部" data-jump="top"><img src="assets/8ccf0.svg" alt=""></button>
@@ -26,7 +27,7 @@
       </nav>
       <div class="media">
         <div class="poster">
-          <img id="poster" src="assets/abdd9.png" alt="游戏视频封面">
+          <img id="poster" src="assets/hero-poster.webp" alt="游戏视频封面" width="700" height="394" fetchpriority="high"><video class="hero-motion" id="hero-motion" muted loop playsinline preload="none" aria-hidden="true"></video>
           <button class="play" data-panel="video" aria-label="播放游戏视频"><img src="assets/d6d39.svg" alt=""></button>
           <div class="media-controls"><span class="progress"></span><button id="sound" aria-label="切换静音" aria-pressed="false"><img src="assets/ff19f.svg" alt=""></button><button id="quality" aria-label="切换画质">高清</button></div>
         </div>
@@ -39,7 +40,7 @@
       <section class="card overview" id="game" aria-label="游戏资料">
         <div class="platforms"><button aria-pressed="true" data-platform="mobile"><span class="phone-icon" aria-hidden="true"></span>移动端</button><button aria-pressed="false" data-platform="pc"><img src="assets/7c522.svg" alt="">PC端<img class="platform-arrow" src="assets/c56ad.svg" alt=""></button></div>
         <div class="game-main">
-          <div class="game-icon"><img src="assets/78186.png" alt=""><img src="assets/4a8da.png" alt="三角洲行动图标"></div>
+          <div class="game-icon"><img src="assets/78186.webp" alt=""><img src="assets/4a8da.webp" alt="三角洲行动图标"></div>
           <div class="game-name"><h1>三角洲行动 <img src="assets/5d4ea.svg" alt="独家"></h1><p><img src="assets/f0707.svg" alt=""> 官方入驻 · 腾讯游戏</p></div>
           <button class="score" data-jump="reviews"><span>快爆评分®</span><strong>9.1</strong><small>2135人评价</small></button>
         </div>
@@ -68,11 +69,11 @@
         </div></details>
       </section>
       <section class="card benefit" id="benefits" aria-label="限时活动">
-        <button data-panel="medal"><img class="benefit-pattern" src="assets/21f2d.svg" alt=""><img class="benefit-swoosh" src="assets/938b2.svg" alt=""><span><strong>参与限时活动可得勋章</strong><small>查看详情 <img class="benefit-enter" src="assets/95b7c.svg" alt=""></small></span><img class="medal" src="assets/307b2.png" alt=""><i class="benefit-indicator"></i></button>
+        <button data-panel="medal"><img class="benefit-pattern" src="assets/21f2d.svg" alt=""><img class="benefit-swoosh" src="assets/938b2.svg" alt=""><span><strong>参与限时活动可得勋章</strong><small>查看详情 <img class="benefit-enter" src="assets/95b7c.svg" alt=""></small></span><img class="medal" src="assets/307b2.webp" alt=""><i class="benefit-indicator"></i></button>
       </section>
       <section class="card season">
         <span class="season-badge">新版本来了<img src="assets/96b5c.svg" alt="！"></span>
-        <div class="season-intro"><div><h2>蜃云灯影，凡尘剑心</h2><p>奇缘主题服送100抽，梦盈花阙活动上线啦啦啦啦啦啦啦啦啦啦啦啦啦</p></div><div class="season-art"><img src="assets/948f6.png" alt="版本活动配图"></div></div>
+        <div class="season-intro"><div><h2>蜃云灯影，凡尘剑心</h2><p>奇缘主题服送100抽，梦盈花阙活动上线啦啦啦啦啦啦啦啦啦啦啦啦啦</p></div><div class="season-art"><img src="assets/948f6.webp" alt="版本活动配图"></div></div>
         <div class="season-tags"><button data-panel="reservation">预约奖励</button><button data-panel="medal">限时活动礼包</button><button data-panel="event">新皮肤</button></div>
         <div class="countdown"><div><b>09</b> 时 <b>26</b> 分 <b>32</b> 秒后</div><button id="reserve" aria-pressed="true">08月21日 14:00 更新 <span>· 已预约</span></button><small>已有 62.1万人 预约</small></div>
       </section>
@@ -83,7 +84,7 @@
         <button class="inset device" data-panel="device"><img src="assets/3539a.png" alt="">机型检测评分工具 <small>立即检测 ›</small></button>
         <div class="inset publisher"><p><img src="assets/42da3.png" alt=""> 腾讯游戏 <span><img class="official-icon" src="assets/cf381.svg" alt=""> 官方入驻</span></p><div class="description"><p>大约2020年左右，Boss的小伙伴还在探索一种抄人的引擎，来为海岛导向的作为游戏亮点的一部作品立项。</p><button class="expand" aria-expanded="false">更多</button><p class="extra" hidden>腾讯游戏官方账号已入驻好游快爆，动态内容以游戏官方发布为准。</p></div></div>
         <h3 id="services"><img src="assets/26bd6.svg" alt="">相关服务</h3>
-        <div class="service-row scroll-row"><button data-panel="tool">口令查询器<img src="assets/47439.png" alt=""></button><button data-panel="tool">直播兑换码查询器<img src="assets/47439.png" alt=""></button><button data-panel="tool">抽卡分析工具<img src="assets/b201b.png" alt=""></button><button data-panel="tool">地图资源查询器</button></div>
+        <div class="service-row scroll-row"><button data-panel="tool">口令查询器<img src="assets/47439.webp" alt=""></button><button data-panel="tool">直播兑换码查询器<img src="assets/47439.webp" alt=""></button><button data-panel="tool">抽卡分析工具<img src="assets/b201b.png" alt=""></button><button data-panel="tool">地图资源查询器</button></div>
         <h3><button data-panel="awards"><img src="assets/bb283.svg" alt="">获得奖项 <small>16项</small></button></h3>
         <div class="awards scroll-row"><button data-panel="awards"><img class="award-leaf" src="assets/87131.svg" alt=""><span>2022 Google play<b>最受欢迎年度游戏</b></span><img class="award-leaf mirrored" src="assets/87131.svg" alt=""></button><button data-panel="awards"><img class="award-leaf" src="assets/87131.svg" alt=""><span>2022 快爆运营<b>最有逼格游戏</b></span><img class="award-leaf mirrored" src="assets/87131.svg" alt=""></button><button data-panel="awards"><img class="award-leaf" src="assets/87131.svg" alt=""><span>2022 快爆运营<b>最有逼格游戏</b></span><img class="award-leaf mirrored" src="assets/87131.svg" alt=""></button></div>
       </section>
@@ -93,7 +94,7 @@
       </section>
       <section class="card gallery">
         <h2>游戏图片</h2>
-        <div class="gallery-row scroll-row"><button data-image="0" aria-label="查看游戏图片 1"><img src="assets/3862e.png" alt="游戏画面 1"></button><button data-image="1" aria-label="查看游戏图片 2"><img src="assets/5924c.png" alt="游戏画面 2"></button></div>
+        <div class="gallery-row scroll-row"><button data-image="0" aria-label="查看游戏图片 1"><img src="assets/3862e.webp" loading="lazy" decoding="async" alt="游戏画面 1"></button><button data-image="1" aria-label="查看游戏图片 2"><img src="assets/5924c.webp" loading="lazy" decoding="async" alt="游戏画面 2"></button></div>
       </section>
       <section class="card reviews" id="reviews">
         <div class="section-head"><h2>玩家评价 <small>11.2万人评价 ›</small></h2><button class="outline" data-panel="review"><img class="write-icon" src="assets/5eb33.svg" alt=""> 写评价</button></div>
@@ -106,7 +107,7 @@
     </main>
     <footer class="action-bar">
       <button class="footer-more" data-panel="menu"><img src="assets/39033.svg" alt="">更多</button>
-      <button class="footer-event" data-jump="benefits"><img src="assets/d955d.png" alt=""><span>活动</span></button>
+      <button class="footer-event" data-jump="benefits"><img src="assets/d955d.webp" alt=""><span>活动</span></button>
       <div class="cloud-buttons"><button data-panel="cloud"><img src="assets/9dca2.svg" alt="">云玩</button><button data-panel="cloud"><img src="assets/993f3.svg" alt="">云玩</button></div>
     </footer>
   </div>
